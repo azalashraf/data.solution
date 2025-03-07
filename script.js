@@ -32,5 +32,45 @@ document.addEventListener("DOMContentLoaded", function () {
             nav.style.display = "flex";
         }
     });
+
+    // Project Popup Modal
+    const modal = document.createElement("div");
+    modal.classList.add("modal");
+    modal.innerHTML = `
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h3 id="modal-title"></h3>
+            <img id="modal-img" src="" alt="Project Image">
+            <p id="modal-desc"></p>
+        </div>
+    `;
+    document.body.appendChild(modal);
+
+    const modalTitle = document.getElementById("modal-title");
+    const modalImg = document.getElementById("modal-img");
+    const modalDesc = document.getElementById("modal-desc");
+    const closeModal = document.querySelector(".close");
+
+    document.querySelectorAll(".work-item .btn").forEach((btn, index) => {
+        btn.addEventListener("click", function (e) {
+            e.preventDefault();
+            const project = btn.parentElement;
+            modalTitle.innerText = project.querySelector("h3").innerText;
+            modalImg.src = project.querySelector("img").src;
+            modalDesc.innerText = project.querySelector("p").innerText;
+            modal.style.display = "flex";
+        });
+    });
+
+    closeModal.addEventListener("click", function () {
+        modal.style.display = "none";
+    });
+
+    window.addEventListener("click", function (e) {
+        if (e.target === modal) {
+            modal.style.display = "none";
+        }
+    });
 });
+
 
