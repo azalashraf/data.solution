@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Data & Web Solutions</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
 </head>
 <body>
     <header>
@@ -18,97 +20,100 @@
         <ul>
             <li><a href="#home">Home</a></li>
             <li><a href="#services">Services</a></li>
-            <li><a href="#past-work">past work </a></li>
+            <li><a href="#past-work">Past Work</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#team">Our Team</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
+
     <section class="hero" id="home">
-        <div class="hero-content">
+        <div class="hero-content" data-aos="fade-up">
             <h2>Innovative Solutions for Your Business</h2>
             <p>We provide expert data analysis and web development services to help your business thrive in the digital age.</p>
             <a href="#services" class="btn">Explore Services</a>
         </div>
     </section>
+
     <section class="container" id="services">
-        <h2>Our Services</h2>
+        <h2 data-aos="fade-up">Our Services</h2>
         <div class="services">
-            <div class="service-box">
-                <h3>Data Analysis</h3>
+            <div class="service-box" data-aos="zoom-in">
+                <h3><i class="fas fa-chart-line"></i> Data Analysis</h3>
                 <p>Transform raw data into valuable insights with our expert analysis.</p>
             </div>
-            <div class="service-box">
-                <h3>Web Development</h3>
+            <div class="service-box" data-aos="zoom-in">
+                <h3><i class="fas fa-code"></i> Web Development</h3>
                 <p>Build modern, responsive, and scalable websites tailored to your needs.</p>
             </div>
-            <div class="service-box">
-                <h3>SEO & Marketing</h3>
+            <div class="service-box" data-aos="zoom-in">
+                <h3><i class="fas fa-bullhorn"></i> SEO & Marketing</h3>
                 <p>Improve your online presence with our SEO and digital marketing strategies.</p>
             </div>
         </div>
     </section>
-   <section class="past-work" id="past-work">
-    <h2>Our Past Work</h2>
-    <p>Here are some of our successful projects that we have delivered to clients.</p>
-    
-    <div class="work-gallery">
-        <div class="work-item">
-            <img src="project1.jpg" alt="Project 1">
-            <h3>E-commerce Website</h3>
-            <p>Developed a fully functional e-commerce platform with secure payment integration.</p>
-            <a href="https://azalashraf.github.io/gift/" class="btn">View Project</a>
+
+    <section class="past-work" id="past-work">
+        <h2 data-aos="fade-up">Our Past Work</h2>
+        <p data-aos="fade-up">Some highlighted projects with quick preview and drive links.</p>
+        <div class="work-gallery">
+            <div class="work-item" data-aos="flip-left">
+                <img src="project1-logo.png" alt="E-commerce Logo">
+                <h3>E-commerce Website</h3>
+                <span class="tag">Web</span>
+                <span class="tag">Payment Integration</span>
+                <a href="https://drive.google.com/file/d/your_project1_link/view" target="_blank" class="btn">View Result</a>
+            </div>
+            <div class="work-item" data-aos="flip-left">
+                <img src="project2-logo.png" alt="Analytics Logo">
+                <h3>Data Analytics Dashboard</h3>
+                <span class="tag">Dashboard</span>
+                <span class="tag">Power BI</span>
+                <a href="https://drive.google.com/file/d/your_project2_link/view" target="_blank" class="btn">View Result</a>
+            </div>
+            <div class="work-item" data-aos="flip-left">
+                <img src="project3-logo.png" alt="SEO Logo">
+                <h3>SEO Optimization</h3>
+                <span class="tag">SEO</span>
+                <span class="tag">Marketing</span>
+                <a href="https://drive.google.com/file/d/your_project3_link/view" target="_blank" class="btn">View Result</a>
+            </div>
         </div>
-        <div class="work-item">
-            <img src="project2.jpg" alt="Project 2">
-            <h3>Data Analytics Dashboard</h3>
-            <p>Created a powerful analytics dashboard for real-time business insights.</p>
-            <a href="#" class="btn">View Project</a>
-        </div>
-        <div class="work-item">
-            <img src="project3.jpg" alt="Project 3">
-            <h3>SEO & Marketing</h3>
-            <p>Optimized a client's website for better search rankings and lead generation.</p>
-            <a href="#" class="btn">View Project</a>
-        </div>
-    </div>
-</section>
+    </section>
 
     <section class="about" id="about">
-        <h2>About Us</h2>
-        <p>We are a team of professionals dedicated to providing cutting-edge solutions in data analysis and web development.</p>
+        <h2 data-aos="fade-up">About Us</h2>
+        <p data-aos="fade-up">We are a team of professionals dedicated to providing cutting-edge solutions in data analysis and web development.</p>
     </section>
+
     <section class="team" id="team">
-        <h2>Meet Our Team</h2>
+        <h2 data-aos="fade-up">Meet Our Team</h2>
         <div class="team-members">
-            <div class="member">
-                <img src="azal_photo.jpg" alt="Team Member 1">
+            <div class="member" data-aos="zoom-in">
+                <img src="azal_photo.jpg" alt="Md Azal Ashraf">
                 <h3>Md Azal Ashraf</h3>
                 <p>Founder & CEO</p>
-            <div class="member">
-                <img src="aquib.jpg" alt="Team Member 1">
-                <h3>Aquib Raza </h3>
-                <p> Co- Founder </p>
             </div>
-            </div>
-           
         </div>
     </section>
+
     <section class="contact" id="contact">
-        <h2>Contact Us</h2>
-        <form>
-            <input type="text" placeholder="Your Name" required>
-            <input type="email" placeholder="Your Email" required>
-            <textarea placeholder="Your Message" rows="4" required></textarea>
-            <button type="submit">Send Message</button>
-        </form>
+        <h2 data-aos="fade-up">Contact Us</h2>
+        <div class="contact-info" data-aos="fade-up">
+            <p><i class="fas fa-envelope"></i> <a href="mailto:hello.datanxt.tech@gmail.com">hello.datanxt.tech@gmail.com</a></p>
+            <p><i class="fas fa-phone"></i> <a href="tel:+919876543210">+91 98765 43210</a></p>
+            <p><i class="fab fa-instagram"></i> <a href="https://instagram.com/yourprofile" target="_blank">@yourprofile</a></p>
+            <p><i class="fab fa-linkedin"></i> <a href="https://linkedin.com/in/yourprofile" target="_blank">linkedin.com/in/yourprofile</a></p>
+        </div>
     </section>
-    
+
     <footer>
         <p>&copy; 2025 Data & Web Solutions. All Rights Reserved.</p>
     </footer>
 
-
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>
-
