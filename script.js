@@ -72,5 +72,16 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     });
 });
+// Hamburger Menu Toggle
+document.getElementById('hamburger').addEventListener('click', () => {
+  document.getElementById('nav-links').classList.toggle('active');
+});
 
+// Optional: Smooth Scroll behavior for older browsers
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  anchor.addEventListener('click', function (e) {
+    e.preventDefault();
+    document.querySelector(this.getAttribute('href')).scrollIntoView({ behavior: 'smooth' });
+  });
+});
 
