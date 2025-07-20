@@ -1,3 +1,6 @@
+/* --- General --- */
+
+
 /* General Styles */
 * {
     margin: 0;
@@ -410,4 +413,311 @@ footer {
     color: #333;
 }
 
+/* Font Update */
+body {
+    font-family: 'Poppins', Arial, sans-serif;
+}
 
+/* Hero Section Enhancement */
+.hero h1 {
+    font-size: 3rem;
+    font-weight: 600;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin: 10px 0 20px;
+}
+
+.hero .btn {
+    padding: 14px 24px;
+    font-size: 1rem;
+    border-radius: 30px;
+}
+
+/* Responsive Hamburger Menu */
+.hamburger {
+    display: none;
+    font-size: 28px;
+    color: white;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .hamburger {
+        display: block;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        background: #222;
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        width: 200px;
+        padding: 10px;
+        border-radius: 10px;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-links li {
+        margin: 10px 0;
+        text-align: right;
+    }
+}
+/* Classy blue gradient for top (nav and hero) */
+header, .hero {
+    background: linear-gradient(to right, #004e92, #000428);
+    color: white;
+}
+
+header h1, header p {
+    margin: 0;
+    padding: 10px 0;
+    text-align: center;
+}
+
+/* Contact Info Styling */
+.contact-info {
+    text-align: center;
+    font-size: 1.1rem;
+    line-height: 2;
+}
+
+.contact-info a {
+    color: #004e92;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+/* Past Work Section - Small Logos with Tags */
+.work-logos {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-top: 2rem;
+}
+
+.work-logo {
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.work-logo img {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+    margin-bottom: 0.5rem;
+}
+
+.work-logo p {
+    margin: 0.2rem 0;
+    font-weight: bold;
+}
+
+.tag {
+    display: inline-block;
+    background: #004e92;
+    color: white;
+    padding: 3px 8px;
+    font-size: 0.8rem;
+    border-radius: 20px;
+    margin: 2px;
+}
+
+/* Hover animation */
+.work-logo:hover {
+    transform: scale(1.05);
+}
+
+/* Fade-in animations */
+.fade-in {
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeInUp 1s ease forwards;
+}
+
+.fade-in-up {
+    opacity: 0;
+    transform: translateY(50px);
+    animation: fadeInUp 1s ease forwards;
+    animation-delay: 0.3s;
+}
+
+/* Animation Keyframes */
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+/* Classy blue gradient for top (nav and hero) */
+header, .hero {
+    background: linear-gradient(to right, #004e92, #000428);
+    color: white;
+}
+
+header h1, header p {
+    margin: 0;
+    padding: 10px 0;
+    text-align: center;
+}
+
+/* Contact Info Styling */
+.contact-info {
+    text-align: center;
+    font-size: 1.1rem;
+    line-height: 2;
+}
+
+.contact-info a {
+    color: #004e92;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+body {
+  background-color: #f5f7fa;
+  color: #333;
+  line-height: 1.6;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Header with classy gradient background */
+header {
+  background: linear-gradient(135deg, #005f99, #0088cc);
+  color: #fff;
+  text-align: center;
+  padding: 40px 20px;
+  box-shadow: 0 4px 15px rgba(0, 136, 204, 0.4);
+}
+
+header h1 {
+  font-size: 3rem;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+}
+
+header p {
+  font-size: 1.25rem;
+  font-weight: 500;
+}
+
+/* Icon Styling */
+h3 i {
+  margin-right: 8px;
+  color: #007BFF;
+  transition: color 0.3s ease;
+}
+
+h3 i:hover {
+  color: #0056b3;
+}
+
+/* Tags Styling */
+.tag {
+  display: inline-block;
+  background-color: #007BFF;
+  color: #fff;
+  padding: 4px 10px;
+  margin: 5px 6px 0 0;
+  border-radius: 12px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  box-shadow: 0 2px 5px rgba(0,123,255,0.3);
+  transition: background-color 0.3s ease;
+}
+
+.tag:hover {
+  background-color: #0056b3;
+  cursor: pointer;
+}
+
+/* Work items for Past Work */
+.work-item {
+  background: #fff;
+  border-radius: 12px;
+  padding: 15px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  width: 280px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.work-item:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 30px rgba(0,123,255,0.3);
+}
+
+.work-item img {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+  margin-bottom: 12px;
+  filter: drop-shadow(0 0 3px rgba(0,123,255,0.4));
+}
+
+/* Buttons consistent styling */
+.btn {
+  background-color: #007BFF;
+  color: white !important;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-weight: 600;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 12px;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #0056b3;
+}
+
+/* Contact Section with icons */
+.contact-info p {
+  font-size: 1.1rem;
+  margin: 12px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  color: #007BFF;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.contact-info p a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.contact-info p:hover {
+  color: #0056b3;
+}
+
+/* Responsive fixes */
+@media (max-width: 768px) {
+  .services, .team-members, .work-gallery {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .work-item {
+    width: 90%;
+    max-width: 350px;
+  }
+}
